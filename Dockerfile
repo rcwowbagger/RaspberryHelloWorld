@@ -15,6 +15,6 @@ RUN dotnet publish . -c Release -o out
 FROM base AS final
 WORKDIR /app
 COPY --from=publish /app/out .
-RUN chmod +x /app/RaspberrySensor.dll
+RUN chmod +x /app/RaspberryHelloWorld.dll
 
-ENTRYPOINT ["dotnet", "RaspberrySensor.dll"]
+ENTRYPOINT ["dotnet", "RaspberryHelloWorld.dll"]

@@ -1,15 +1,22 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.26124.0
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29806.167
 MinimumVisualStudioVersion = 15.0.26124.0
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{A24635FC-42BE-495B-8155-B7216407750B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RaspberryHelloWorld", "src\RaspberryHelloWorld\RaspberryHelloWorld.csproj", "{BEBC6FBC-F325-4728-BE97-4215B0B92B2F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RaspberryHelloWorld", "src\RaspberryHelloWorld\RaspberryHelloWorld.csproj", "{BEBC6FBC-F325-4728-BE97-4215B0B92B2F}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{B200AB85-2640-428B-AE09-949448CD040D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RaspberryHelloWorldTest", "test\RaspberryHelloWorldTest\RaspberryHelloWorldTest.csproj", "{1744D992-A8BD-4D45-9D8C-0980A0A2E5B8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RaspberryHelloWorldTest", "test\RaspberryHelloWorldTest\RaspberryHelloWorldTest.csproj", "{1744D992-A8BD-4D45-9D8C-0980A0A2E5B8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{95167028-4349-416F-A524-C4C4A1CF0929}"
+	ProjectSection(SolutionItems) = preProject
+		.dockerignore = .dockerignore
+		.gitignore = .gitignore
+		Dockerfile = Dockerfile
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -19,9 +26,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 		Release|x64 = Release|x64
 		Release|x86 = Release|x86
-	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{BEBC6FBC-F325-4728-BE97-4215B0B92B2F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -49,8 +53,14 @@ Global
 		{1744D992-A8BD-4D45-9D8C-0980A0A2E5B8}.Release|x86.ActiveCfg = Release|Any CPU
 		{1744D992-A8BD-4D45-9D8C-0980A0A2E5B8}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{BEBC6FBC-F325-4728-BE97-4215B0B92B2F} = {A24635FC-42BE-495B-8155-B7216407750B}
 		{1744D992-A8BD-4D45-9D8C-0980A0A2E5B8} = {B200AB85-2640-428B-AE09-949448CD040D}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9F86B2E7-87A4-4248-B3FF-47B95815613C}
 	EndGlobalSection
 EndGlobal
