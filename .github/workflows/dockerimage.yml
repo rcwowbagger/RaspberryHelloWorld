@@ -15,7 +15,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Build the Docker image
-      run: docker build --file Dockerfile.debian-arm32 --tag raspberryhelloworld:latest .
+      run: docker build --file Dockerfile --tag raspberryhelloworld:latest .
     - uses: actions/checkout@v2
     - name: Tag the Docker image
       run: docker tag raspberryhelloworld rcwowbagger/raspberryhelloworld
